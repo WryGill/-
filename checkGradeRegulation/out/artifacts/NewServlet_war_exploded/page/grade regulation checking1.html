@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查分系统</title>
+
+</head>
+<body>
+<div align="center"><p>2021-2022学年第二学期期末统考</p></div>
+<form id="userForm" method="get" action="/NewServlet_war_exploded/QueryServlet">
+    <table>
+        <tr>
+            <td><span style="color: black;font-size: 15px">考号</span></td>
+            <td><input type="text" id="studentID" name="studentID" placeholder="请输入考号"></td>
+            <td><span style="font-size: 12px;color: red" id="studentIDError"></span></td>
+        </tr>
+        <br>
+        <tr>
+            <td><span style="color: black;font-size: 15px">姓名</span></td>
+            <td><input type="text" id="studentName" name="studentName" placeholder="请输入姓名"></td>
+            <td><span style="font-size: 12px;color: red" id="studentNameError"></span></td>
+        </tr>
+    </table>
+    <br>
+    <td><div align="center"><input type="submit" id="btn" value="查询"></div>
+</form>
+<script type="text/javascript" src="grade%20regulation%20checker.js"></script>
+</body>
+</html>
